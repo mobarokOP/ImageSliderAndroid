@@ -3,14 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     tools:context=".MainActivity">
 
+    <com.mobarokOP.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        app:autoSlide="true"
+        app:slideDelay="2000"
+        app:itemScaleType="FIT_XY"
+        app:itemMargin="20dp"
+        app:itemPadding="50dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World"
-        android:layout_centerInParent="true"/>
+    <!--
+
+        <com.mobarokOP.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            app:autoSlide="true" &lt;!&ndash; Set to true for automatic sliding &ndash;&gt;
+            app:slideDelay="2000" &lt;!&ndash; Delay between slides in milliseconds &ndash;&gt;
+            app:itemScaleType="FIT_XY" &lt;!&ndash; ScaleType for each item &ndash;&gt;
+            app:itemMargin="20dp" &lt;!&ndash; Margin between items &ndash;&gt;
+            app:itemPadding="50dp" /> &lt;!&ndash; Padding around each item &ndash;&gt;
+
+
+        -->
+
+
+
 </RelativeLayout>

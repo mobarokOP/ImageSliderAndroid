@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageSlider">
+        <attr name="slideDelay" format="integer"/>
+        <attr name="autoSlide" format="boolean"/>
+        <attr name="itemPadding" format="dimension"/>
+        <attr name="itemMargin" format="dimension"/>
+        <attr name="itemScaleType">
+            <enum name="FIT_CENTER" value="1" />
+            <enum name="FIT_START" value="2" />
+            <enum name="FIT_END" value="3" />
+            <enum name="FIT_XY" value="4" />
+            <enum name="CENTER_CROP" value="5" />
+        </attr>
+    </declare-styleable>
+</resources>
